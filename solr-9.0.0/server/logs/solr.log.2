@@ -1,0 +1,837 @@
+2022-05-15 02:34:43.034 INFO  (main) [] o.e.j.u.log Logging initialized @1394ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-05-15 02:34:43.344 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-Ubuntu-0ubuntu0.22.04.1
+2022-05-15 02:34:43.781 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-05-15 02:34:43.816 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-05-15 02:34:43.819 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in cloud mode on port 8984
+2022-05-15 02:34:43.819 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /home/haseeb/Desktop/DC_Project/solr-9.0.0
+2022-05-15 02:34:43.819 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-05-15T02:34:43.819773Z
+2022-05-15 02:34:43.861 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr (source: system property: solr.solr.home)
+2022-05-15 02:34:43.946 INFO  (main) [] o.a.s.c.c.ConnectionManager Waiting up to 30000ms for client to connect to ZooKeeper
+2022-05-15 02:34:44.006 INFO  (zkConnectionManagerCallback-2-thread-1) [] o.a.s.c.c.ConnectionManager zkClient has connected
+2022-05-15 02:34:44.006 INFO  (main) [] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2022-05-15 02:34:44.155 INFO  (main) [] o.a.s.c.NodeConfig Loading solr.xml from SolrHome (not found in ZooKeeper)
+2022-05-15 02:34:44.158 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr/solr.xml
+2022-05-15 02:34:45.935 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2022-05-15 02:34:45.936 INFO  (main) [] o.a.s.c.ZkContainer Zookeeper client=localhost:2181,localhost:2182,localhost:2183
+2022-05-15 02:34:45.964 INFO  (main) [] o.a.s.c.DistributedClusterStateUpdater Creating DistributedClusterStateUpdater with useDistributedStateUpdate=false. Solr will be using Overseer based cluster state updates.
+2022-05-15 02:34:45.983 INFO  (main) [] o.a.s.c.c.ConnectionManager Waiting up to 30000ms for client to connect to ZooKeeper
+2022-05-15 02:34:45.994 INFO  (zkConnectionManagerCallback-12-thread-1) [] o.a.s.c.c.ConnectionManager zkClient has connected
+2022-05-15 02:34:45.995 INFO  (main) [] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2022-05-15 02:34:46.068 WARN  (main) [] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2022-05-15 02:34:46.093 INFO  (main) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2022-05-15 02:34:46.147 INFO  (main) [] o.a.s.c.DistributedClusterStateUpdater Creating DistributedClusterStateUpdater with useDistributedStateUpdate=false. Solr will be using Overseer based cluster state updates.
+2022-05-15 02:34:46.210 INFO  (main) [] o.a.s.c.ZkController Publish node=localhost:8984_solr as DOWN
+2022-05-15 02:34:46.230 INFO  (main) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-05-15 02:34:46.245 INFO  (main) [] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/localhost:8984_solr
+2022-05-15 02:34:46.301 INFO  (zkCallback-11-thread-1) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2022-05-15 02:34:46.401 INFO  (main) [] o.a.s.p.PackageLoader /packages.json updated to version -1
+2022-05-15 02:34:46.418 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-05-15 02:34:46.927 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr
+2022-05-15 02:34:47.055 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@35fe2125{/solr,file:///home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr-webapp/webapp}
+2022-05-15 02:34:47.066 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/logs/2022_05_15.request.log
+2022-05-15 02:34:47.074 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@66b7550d{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8984}
+2022-05-15 02:34:47.075 INFO  (main) [] o.e.j.s.Server Started @5436ms
+2022-05-15 02:35:06.328 INFO  (zkCallback-11-thread-1) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (3)
+2022-05-15 02:35:25.152 INFO  (qtp507819576-17) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1652582122457} status=0 QTime=134
+2022-05-15 02:35:54.619 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x1000170b5cb0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x1000170b5cb0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:35:54.723 WARN  (zkConnectionManagerCallback-12-thread-1) [] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@464ec082 name: ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:Disconnected type:None path:null path: null type: None
+2022-05-15 02:35:54.723 WARN  (zkConnectionManagerCallback-12-thread-1) [] o.a.s.c.c.ConnectionManager zkClient has disconnected
+2022-05-15 02:35:54.745 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x1000170b5cb0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x1000170b5cb0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:35:55.292 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:35:56.867 INFO  (zkConnectionManagerCallback-12-thread-1) [] o.a.s.c.c.ConnectionManager zkClient has connected
+2022-05-15 02:36:07.835 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x1000170b5cb0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x1000170b5cb0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:07.938 WARN  (zkConnectionManagerCallback-12-thread-1) [] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@464ec082 name: ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:Disconnected type:None path:null path: null type: None
+2022-05-15 02:36:07.938 WARN  (zkConnectionManagerCallback-12-thread-1) [] o.a.s.c.c.ConnectionManager zkClient has disconnected
+2022-05-15 02:36:08.349 INFO  (zkConnectionManagerCallback-12-thread-1) [] o.a.s.c.c.ConnectionManager zkClient has connected
+2022-05-15 02:36:09.079 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x1000170b5cb0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x1000170b5cb0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:09.181 WARN  (zkConnectionManagerCallback-12-thread-1) [] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@464ec082 name: ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:Disconnected type:None path:null path: null type: None
+2022-05-15 02:36:09.181 WARN  (zkConnectionManagerCallback-12-thread-1) [] o.a.s.c.c.ConnectionManager zkClient has disconnected
+2022-05-15 02:36:09.862 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:10.137 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:11.474 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x1000170b5cb0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x1000170b5cb0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:11.932 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:12.294 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:13.847 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:14.441 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:14.899 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:16.931 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:17.217 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:17.904 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:19.652 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:20.008 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:20.828 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:22.385 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:23.087 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:23.896 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:25.029 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:25.595 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:26.579 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:28.180 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:29.262 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:30.161 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:31.604 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:31.792 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:32.869 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:34.552 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:35.243 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:35.530 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:37.487 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:38.305 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:38.993 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:40.867 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:41.962 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:42.434 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:44.249 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:44.744 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:45.769 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:47.237 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:47.653 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:48.217 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:49.635 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:49.995 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:51.020 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:52.505 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:53.200 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:53.306 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:54.420 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:55.158 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:55.277 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:57.234 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:58.058 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:58.226 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:36:59.790 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:00.816 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:01.742 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:03.465 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:03.947 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:04.183 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:05.874 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:06.621 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:07.470 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:09.239 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:10.077 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:10.434 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:12.056 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:12.335 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:12.745 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:14.102 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:15.051 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:15.451 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:16.772 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:17.392 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:18.138 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:19.759 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:20.228 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:20.870 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:22.298 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:22.705 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:23.702 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:24.948 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:26.004 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:26.921 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:28.640 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:29.409 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:30.018 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:31.673 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:31.902 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:32.206 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:33.397 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:34.440 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:35.256 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:36.742 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:37.067 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:37.786 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:39.223 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:39.367 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:39.526 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:40.891 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:41.947 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:42.507 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:44.081 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:44.604 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:44.875 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:46.591 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:47.510 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:48.032 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@66b7550d{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8984}
+2022-05-15 02:37:48.044 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1724399560
+2022-05-15 02:37:48.044 INFO  (ShutdownMonitor) [] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/localhost:8984_solr
+2022-05-15 02:37:48.127 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x1000170b5cb0001 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:49.734 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2022-05-15 02:37:49.764 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2022-05-15 02:37:49.777 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2022-05-15 02:37:49.782 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2022-05-15 02:37:49.817 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn An exception was thrown while closing send thread for session 0x1000170b5cb0001. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:37:49.931 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@35fe2125{/solr,null,STOPPED}{/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr-webapp/webapp}

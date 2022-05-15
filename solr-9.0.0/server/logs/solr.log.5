@@ -1,0 +1,328 @@
+2022-05-15 02:49:36.444 INFO  (main) [] o.e.j.u.log Logging initialized @1382ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-05-15 02:49:36.750 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-Ubuntu-0ubuntu0.22.04.1
+2022-05-15 02:49:37.176 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-05-15 02:49:37.197 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-05-15 02:49:37.199 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in cloud mode on port 8984
+2022-05-15 02:49:37.199 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /home/haseeb/Desktop/DC_Project/solr-9.0.0
+2022-05-15 02:49:37.201 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-05-15T02:49:37.201755Z
+2022-05-15 02:49:37.257 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr (source: system property: solr.solr.home)
+2022-05-15 02:49:37.342 INFO  (main) [] o.a.s.c.c.ConnectionManager Waiting up to 30000ms for client to connect to ZooKeeper
+2022-05-15 02:49:37.368 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:37.669 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:38.573 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:40.357 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:41.084 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:42.118 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:43.759 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:44.320 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:44.590 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:46.696 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:47.409 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:47.640 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:48.794 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:49.880 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:50.567 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:52.274 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:52.477 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:52.721 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:54.249 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:54.797 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:55.404 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:57.348 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:57.517 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:57.834 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:59.497 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:49:59.846 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:50:00.282 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:50:02.194 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:50:03.130 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:50:03.337 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:50:04.481 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:50:05.087 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2183, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:50:05.631 WARN  (main-SendThread(localhost:2182)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2182, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:50:06.979 WARN  (main-SendThread(localhost:2181)) [] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:50:08.018 WARN  (main-SendThread(localhost:2183)) [] o.a.z.ClientCnxn An exception was thrown while closing send thread for session 0x0. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-15 02:50:08.141 ERROR (main) [] o.a.s.s.CoreContainerProvider Could not start Solr. Check solr/home property and the logs
+2022-05-15 02:50:08.143 ERROR (main-EventThread) [] o.a.z.ClientCnxn Error while calling watcher. => java.util.concurrent.RejectedExecutionException: Task org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$$Lambda$227/0x000000084028a440@373c8cb7 rejected from org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor@5bd510b1[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+java.util.concurrent.RejectedExecutionException: Task org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$$Lambda$227/0x000000084028a440@373c8cb7 rejected from org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor@5bd510b1[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1355) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.execute(ExecutorUtil.java:240) ~[?:?]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient$ProcessWatchWithExecutor.process(SolrZkClient.java:950) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:580) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:555) ~[?:?]
+2022-05-15 02:50:08.191 ERROR (main) [] o.a.s.c.SolrCore null => org.apache.solr.common.SolrException: Error occurred while loading solr.xml from zookeeper
+	at org.apache.solr.core.NodeConfig.loadNodeConfig(NodeConfig.java:221)
+org.apache.solr.common.SolrException: Error occurred while loading solr.xml from zookeeper
+	at org.apache.solr.core.NodeConfig.loadNodeConfig(NodeConfig.java:221) ~[?:?]
+	at org.apache.solr.servlet.CoreContainerProvider.createCoreContainer(CoreContainerProvider.java:374) ~[?:?]
+	at org.apache.solr.servlet.CoreContainerProvider.init(CoreContainerProvider.java:226) ~[?:?]
+	at org.apache.solr.servlet.CoreContainerProvider.contextInitialized(CoreContainerProvider.java:110) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:1067) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:572) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.contextInitialized(ContextHandler.java:996) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:746) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1449) ~[jetty-webapp-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1414) ~[jetty-webapp-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:910) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524) ~[jetty-webapp-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:426) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.start(Server.java:423) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.xml.XmlConfiguration.lambda$main$3(XmlConfiguration.java:1907) ~[jetty-xml-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1857) ~[jetty-xml-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:218) ~[start.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.start.Main.start(Main.java:491) ~[start.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.start.Main.main(Main.java:77) ~[start.jar:9.4.44.v20210927]
+Caused by: org.apache.solr.common.SolrException: java.util.concurrent.TimeoutException: Could not connect to ZooKeeper localhost:2181,localhost:2182,localhost:2183 within 30000 ms
+	at org.apache.solr.common.cloud.SolrZkClient.<init>(SolrZkClient.java:253) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.<init>(SolrZkClient.java:135) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.<init>(SolrZkClient.java:100) ~[?:?]
+	at org.apache.solr.core.NodeConfig.loadNodeConfig(NodeConfig.java:213) ~[?:?]
+	... 51 more
+Caused by: java.util.concurrent.TimeoutException: Could not connect to ZooKeeper localhost:2181,localhost:2182,localhost:2183 within 30000 ms
+	at org.apache.solr.common.cloud.ConnectionManager.waitForConnected(ConnectionManager.java:285) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.<init>(SolrZkClient.java:244) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.<init>(SolrZkClient.java:135) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.<init>(SolrZkClient.java:100) ~[?:?]
+	at org.apache.solr.core.NodeConfig.loadNodeConfig(NodeConfig.java:213) ~[?:?]
+	... 51 more
+2022-05-15 02:50:08.223 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@35fe2125{/solr,file:///home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr-webapp/webapp}
+2022-05-15 02:50:08.240 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/logs/2022_05_15.request.log
+2022-05-15 02:50:08.252 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@66b7550d{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8984}
+2022-05-15 02:50:08.252 INFO  (main) [] o.e.j.s.Server Started @33193ms
+2022-05-15 02:52:16.343 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@66b7550d{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8984}
+2022-05-15 02:52:16.352 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@35fe2125{/solr,null,STOPPED}{/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr-webapp/webapp}
