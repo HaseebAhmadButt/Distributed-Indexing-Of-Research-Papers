@@ -1,0 +1,276 @@
+2022-05-16 03:52:14.661 INFO  (main) [] o.e.j.u.log Logging initialized @2234ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-05-16 03:52:14.935 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-Ubuntu-0ubuntu0.22.04.1
+2022-05-16 03:52:15.350 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-05-16 03:52:15.383 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-05-16 03:52:15.384 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in cloud mode on port 8985
+2022-05-16 03:52:15.384 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /home/haseeb/Desktop/DC_Project/solr
+2022-05-16 03:52:15.384 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-05-16T03:52:15.384354Z
+2022-05-16 03:52:15.421 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr (source: system property: solr.solr.home)
+2022-05-16 03:52:15.504 INFO  (main) [] o.a.s.c.c.ConnectionManager Waiting up to 30000ms for client to connect to ZooKeeper
+2022-05-16 03:52:15.552 INFO  (zkConnectionManagerCallback-2-thread-1) [] o.a.s.c.c.ConnectionManager zkClient has connected
+2022-05-16 03:52:15.553 INFO  (main) [] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2022-05-16 03:52:15.567 WARN  (main-SendThread(localhost:9983)) [] o.a.z.ClientCnxn An exception was thrown while closing send thread for session 0x100009fb7060003. => EndOfStreamException: Unable to read additional data from server sessionid 0x100009fb7060003, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x100009fb7060003, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1280) ~[?:?]
+2022-05-16 03:52:15.669 INFO  (main) [] o.a.s.c.NodeConfig Loading solr.xml from SolrHome (not found in ZooKeeper)
+2022-05-16 03:52:15.671 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/solr.xml
+2022-05-16 03:52:17.274 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2022-05-16 03:52:17.275 INFO  (main) [] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2022-05-16 03:52:17.293 INFO  (main) [] o.a.s.c.DistributedClusterStateUpdater Creating DistributedClusterStateUpdater with useDistributedStateUpdate=false. Solr will be using Overseer based cluster state updates.
+2022-05-16 03:52:17.303 INFO  (main) [] o.a.s.c.c.ConnectionManager Waiting up to 30000ms for client to connect to ZooKeeper
+2022-05-16 03:52:17.317 INFO  (zkConnectionManagerCallback-12-thread-1) [] o.a.s.c.c.ConnectionManager zkClient has connected
+2022-05-16 03:52:17.318 INFO  (main) [] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2022-05-16 03:52:17.376 WARN  (main) [] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2022-05-16 03:52:17.394 INFO  (main) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (2)
+2022-05-16 03:52:17.450 INFO  (main) [] o.a.s.c.DistributedClusterStateUpdater Creating DistributedClusterStateUpdater with useDistributedStateUpdate=false. Solr will be using Overseer based cluster state updates.
+2022-05-16 03:52:17.486 INFO  (main) [] o.a.s.c.ZkController Publish node=localhost:8985_solr as DOWN
+2022-05-16 03:52:17.503 INFO  (main) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-05-16 03:52:17.517 INFO  (main) [] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/localhost:8985_solr
+2022-05-16 03:52:17.549 INFO  (zkCallback-11-thread-1) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (3)
+2022-05-16 03:52:17.655 INFO  (main) [] o.a.s.p.PackageLoader /packages.json updated to version -1
+2022-05-16 03:52:17.675 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-05-16 03:52:18.134 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr
+2022-05-16 03:52:18.135 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [collection1_shard3_replica_n3]
+2022-05-16 03:52:18.272 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-05-16 03:52:18.291 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@35fe2125{/solr,file:///home/haseeb/Desktop/DC_Project/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/haseeb/Desktop/DC_Project/solr/server/solr-webapp/webapp}
+2022-05-16 03:52:18.301 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/logs/2022_05_16.request.log
+2022-05-16 03:52:18.315 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@66b7550d{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8985}
+2022-05-16 03:52:18.315 INFO  (main) [] o.e.j.s.Server Started @5915ms
+2022-05-16 03:52:18.415 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [] o.a.s.s.IndexSchema Schema name=default-config
+2022-05-16 03:52:19.119 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-05-16 03:52:19.169 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-05-16 03:52:19.173 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.s.IndexSchema Schema name=default-config
+2022-05-16 03:52:19.333 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-05-16 03:52:19.333 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.CoreContainer Creating SolrCore 'collection1_shard3_replica_n3' using configuration from configset collection1, trusted=true
+2022-05-16 03:52:19.381 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.SolrCore Opening new SolrCore at [/home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/collection1_shard3_replica_n3], dataDir=[/home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/collection1_shard3_replica_n3/data/]
+2022-05-16 03:52:20.129 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-05-16 03:52:20.129 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-05-16 03:52:20.145 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-05-16 03:52:20.149 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2022-05-16 03:52:20.186 INFO  (qtp507819576-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=25
+2022-05-16 03:52:20.256 INFO  (qtp507819576-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=32
+2022-05-16 03:52:20.353 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/collection1
+2022-05-16 03:52:20.364 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/collection1
+2022-05-16 03:52:20.372 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/collection1/managed-schema.xml
+2022-05-16 03:52:20.374 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2022-05-16 03:52:20.397 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01}
+2022-05-16 03:52:20.421 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-05-16 03:52:20.432 INFO  (coreLoadExecutor-17-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1732953390901624832
+2022-05-16 03:52:20.446 INFO  (searcherExecutor-19-thread-1-processing-localhost:8985_solr collection1_shard3_replica_n3 collection1 shard3 core_node4) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-05-16 03:52:20.446 INFO  (searcherExecutor-19-thread-1-processing-localhost:8985_solr collection1_shard3_replica_n3 collection1 shard3 core_node4) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-05-16 03:52:20.459 INFO  (searcherExecutor-19-thread-1-processing-localhost:8985_solr collection1_shard3_replica_n3 collection1 shard3 core_node4) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-05-16 03:52:20.500 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/collection1/leaders/shard3
+2022-05-16 03:52:20.539 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard3: total=2 found=1 timeoute in=179997ms
+2022-05-16 03:52:24.843 INFO  (zkCallback-11-thread-2) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (4)
+2022-05-16 03:52:28.091 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2022-05-16 03:52:28.091 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2022-05-16 03:52:28.092 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.SyncStrategy Sync replicas to http://localhost:8985/solr/collection1_shard3_replica_n3/
+2022-05-16 03:52:28.100 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.u.PeerSync PeerSync: core=collection1_shard3_replica_n3 url=http://localhost:8985/solr  START replicas=[http://localhost:8986/solr/collection1_shard3_replica_n8/] nUpdates=100
+2022-05-16 03:52:28.158 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.u.PeerSync PeerSync: core=collection1_shard3_replica_n3 url=http://localhost:8985/solr  DONE. We have no versions. sync failed.
+2022-05-16 03:52:28.401 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.SyncStrategy Leader's attempt to sync with shard failed, moving to the next candidate
+2022-05-16 03:52:28.402 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.ShardLeaderElectionContext We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+2022-05-16 03:52:28.403 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/collection1/leaders/shard3/leader after winning as /collections/collection1/leader_elect/shard3/election/72058280008351748-core_node4-n_0000000002
+2022-05-16 03:52:28.423 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://localhost:8985/solr/collection1_shard3_replica_n3/ shard3
+2022-05-16 03:52:28.446 INFO  (coreZkRegister-3-thread-1-processing-localhost:8985_solr) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.ZkController I am the leader, no recovery necessary
+2022-05-16 03:52:28.565 INFO  (zkCallback-11-thread-2) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection1/state.json] for collection [collection1] has occurred - updating... (live nodes size: [4])
+2022-05-16 03:52:28.566 INFO  (zkCallback-11-thread-1) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection1/state.json] for collection [collection1] has occurred - updating... (live nodes size: [4])
+2022-05-16 03:52:29.017 INFO  (qtp507819576-16) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={wt=javabin&version=2} hits=0 status=0 QTime=41
+2022-05-16 03:52:29.017 INFO  (qtp507819576-16) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={wt=javabin&version=2} status=0 QTime=41
+2022-05-16 03:52:29.059 INFO  (qtp507819576-20) [ x:collection1_shard3_replica_n3] o.a.s.h.a.PrepRecoveryOp Going to wait for coreNodeName: core_node11, state: recovering, checkLive: true, onlyIfLeader: true, onlyIfLeaderActive: true
+2022-05-16 03:52:29.086 INFO  (qtp507819576-20) [] o.a.s.h.a.PrepRecoveryOp In WaitForState(recovering): collection=collection1, shard=shard3, thisCore=collection1_shard3_replica_n3, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=down, localState=active, nodeName=localhost:8986_solr, coreNodeName=core_node11, onlyIfActiveCheckResult=false, nodeProps: core_node11:{
+  "core":"collection1_shard3_replica_n8",
+  "core_node_name":"core_node11",
+  "node_name":"localhost:8986_solr",
+  "base_url":"http://localhost:8986/solr",
+  "state":"down",
+  "collection":"collection1",
+  "shard":"shard3",
+  "type":"NRT",
+  "force_set_state":"false"}
+2022-05-16 03:52:29.086 INFO  (qtp507819576-20) [] o.a.s.h.a.PrepRecoveryOp In WaitForState(recovering): collection=collection1, shard=shard3, thisCore=collection1_shard3_replica_n3, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=down, localState=active, nodeName=localhost:8986_solr, coreNodeName=core_node11, onlyIfActiveCheckResult=false, nodeProps: core_node11:{
+  "core":"collection1_shard3_replica_n8",
+  "core_node_name":"core_node11",
+  "node_name":"localhost:8986_solr",
+  "base_url":"http://localhost:8986/solr",
+  "state":"down",
+  "collection":"collection1",
+  "shard":"shard3",
+  "type":"NRT",
+  "force_set_state":"false"}
+2022-05-16 03:52:29.086 INFO  (qtp507819576-20) [] o.a.s.h.a.PrepRecoveryOp In WaitForState(recovering): collection=collection1, shard=shard3, thisCore=collection1_shard3_replica_n3, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=down, localState=active, nodeName=localhost:8986_solr, coreNodeName=core_node11, onlyIfActiveCheckResult=false, nodeProps: core_node11:{
+  "core":"collection1_shard3_replica_n8",
+  "core_node_name":"core_node11",
+  "node_name":"localhost:8986_solr",
+  "base_url":"http://localhost:8986/solr",
+  "state":"down",
+  "collection":"collection1",
+  "shard":"shard3",
+  "type":"NRT",
+  "force_set_state":"false"}
+2022-05-16 03:52:29.161 INFO  (zkCallback-11-thread-2) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection1/state.json] for collection [collection1] has occurred - updating... (live nodes size: [4])
+2022-05-16 03:52:29.162 INFO  (zkCallback-11-thread-1) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection1/state.json] for collection [collection1] has occurred - updating... (live nodes size: [4])
+2022-05-16 03:52:29.168 INFO  (watches-13-thread-2) [] o.a.s.h.a.PrepRecoveryOp In WaitForState(recovering): collection=collection1, shard=shard3, thisCore=collection1_shard3_replica_n3, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=recovering, localState=active, nodeName=localhost:8986_solr, coreNodeName=core_node11, onlyIfActiveCheckResult=false, nodeProps: core_node11:{
+  "core":"collection1_shard3_replica_n8",
+  "core_node_name":"core_node11",
+  "node_name":"localhost:8986_solr",
+  "base_url":"http://localhost:8986/solr",
+  "state":"recovering",
+  "collection":"collection1",
+  "shard":"shard3",
+  "type":"NRT",
+  "force_set_state":"false"}
+2022-05-16 03:52:29.168 INFO  (watches-13-thread-1) [] o.a.s.h.a.PrepRecoveryOp In WaitForState(recovering): collection=collection1, shard=shard3, thisCore=collection1_shard3_replica_n3, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=recovering, localState=active, nodeName=localhost:8986_solr, coreNodeName=core_node11, onlyIfActiveCheckResult=false, nodeProps: core_node11:{
+  "core":"collection1_shard3_replica_n8",
+  "core_node_name":"core_node11",
+  "node_name":"localhost:8986_solr",
+  "base_url":"http://localhost:8986/solr",
+  "state":"recovering",
+  "collection":"collection1",
+  "shard":"shard3",
+  "type":"NRT",
+  "force_set_state":"false"}
+2022-05-16 03:52:29.168 INFO  (qtp507819576-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={nodeName=localhost:8986_solr&onlyIfLeaderActive=true&core=collection1_shard3_replica_n3&coreNodeName=core_node11&action=PREPRECOVERY&checkLive=true&state=recovering&onlyIfLeader=true&wt=javabin&version=2} status=0 QTime=110
+2022-05-16 03:52:31.823 INFO  (qtp507819576-24) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={waitSearcher=true&openSearcher=false&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 139
+2022-05-16 03:52:31.837 INFO  (qtp507819576-20) [c:collection1 s:shard3 r:core_node4 x:collection1_shard3_replica_n3] o.a.s.c.S.Request webapp=/solr path=/replication params={qt=/replication&wt=javabin&version=2&command=indexversion} status=0 QTime=1
+2022-05-16 03:52:31.894 INFO  (zkCallback-11-thread-2) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection1/state.json] for collection [collection1] has occurred - updating... (live nodes size: [4])
+2022-05-16 03:52:31.894 INFO  (zkCallback-11-thread-1) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection1/state.json] for collection [collection1] has occurred - updating... (live nodes size: [4])
+2022-05-16 03:53:03.573 INFO  (qtp507819576-20) [ x:collection2_shard1_replica_n8] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node11&collection.configName=collection2&newCollection=true&name=collection2_shard1_replica_n8&action=CREATE&numShards=4&collection=collection2&shard=shard1&wt=javabin&version=2&replicaType=NRT
+2022-05-16 03:53:03.606 INFO  (qtp507819576-25) [ x:collection2_shard3_replica_n7] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node9&collection.configName=collection2&newCollection=true&name=collection2_shard3_replica_n7&action=CREATE&numShards=4&collection=collection2&shard=shard3&wt=javabin&version=2&replicaType=NRT
+2022-05-16 03:53:03.673 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-05-16 03:53:03.714 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-05-16 03:53:03.770 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.s.IndexSchema Schema name=default-config
+2022-05-16 03:53:03.810 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.s.IndexSchema Schema name=default-config
+2022-05-16 03:53:04.115 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-05-16 03:53:04.116 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.CoreContainer Creating SolrCore 'collection2_shard1_replica_n8' using configuration from configset collection2, trusted=true
+2022-05-16 03:53:04.117 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.SolrCore Opening new SolrCore at [/home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/collection2_shard1_replica_n8], dataDir=[/home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/collection2_shard1_replica_n8/data/]
+2022-05-16 03:53:04.174 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-05-16 03:53:04.174 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.CoreContainer Creating SolrCore 'collection2_shard3_replica_n7' using configuration from configset collection2, trusted=true
+2022-05-16 03:53:04.175 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.SolrCore Opening new SolrCore at [/home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/collection2_shard3_replica_n7], dataDir=[/home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/collection2_shard3_replica_n7/data/]
+2022-05-16 03:53:04.938 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-05-16 03:53:04.938 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-05-16 03:53:05.085 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-05-16 03:53:05.085 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-05-16 03:53:05.132 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/collection2
+2022-05-16 03:53:05.135 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/collection2
+2022-05-16 03:53:05.136 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/collection2/managed-schema.xml
+2022-05-16 03:53:05.138 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-05-16 03:53:05.138 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-05-16 03:53:05.148 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2022-05-16 03:53:05.150 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01}
+2022-05-16 03:53:05.156 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-05-16 03:53:05.157 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1732953437798137856
+2022-05-16 03:53:05.159 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-05-16 03:53:05.159 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-05-16 03:53:05.180 INFO  (searcherExecutor-25-thread-1-processing-localhost:8985_solr collection2_shard1_replica_n8 collection2 shard1 core_node11) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-05-16 03:53:05.180 INFO  (searcherExecutor-25-thread-1-processing-localhost:8985_solr collection2_shard1_replica_n8 collection2 shard1 core_node11) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-05-16 03:53:05.185 INFO  (searcherExecutor-25-thread-1-processing-localhost:8985_solr collection2_shard1_replica_n8 collection2 shard1 core_node11) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-05-16 03:53:05.216 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.ZkShardTerms Successful update of terms at /collections/collection2/terms/shard1 to Terms{values={core_node16=0, core_node11=0}, version=1} for registerTerm
+2022-05-16 03:53:05.230 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/collection2
+2022-05-16 03:53:05.232 INFO  (qtp507819576-20) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/collection2/leaders/shard1
+2022-05-16 03:53:05.232 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/collection2
+2022-05-16 03:53:05.233 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/collection2/managed-schema.xml
+2022-05-16 03:53:05.236 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2022-05-16 03:53:05.239 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01}
+2022-05-16 03:53:05.245 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-05-16 03:53:05.246 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1732953437892509696
+2022-05-16 03:53:05.264 INFO  (searcherExecutor-27-thread-1-processing-localhost:8985_solr collection2_shard3_replica_n7 collection2 shard3 core_node9) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-05-16 03:53:05.265 INFO  (searcherExecutor-27-thread-1-processing-localhost:8985_solr collection2_shard3_replica_n7 collection2 shard3 core_node9) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-05-16 03:53:05.269 INFO  (searcherExecutor-27-thread-1-processing-localhost:8985_solr collection2_shard3_replica_n7 collection2 shard3 core_node9) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-05-16 03:53:05.285 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.ZkShardTerms Successful update of terms at /collections/collection2/terms/shard3 to Terms{values={core_node15=0, core_node9=0}, version=1} for registerTerm
+2022-05-16 03:53:05.289 INFO  (qtp507819576-25) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/collection2/leaders/shard3
+2022-05-16 03:53:05.835 INFO  (qtp507819576-16) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.S.Request webapp=/solr path=/get params={distrib=false&qt=/get&fingerprint=false&getVersions=100&wt=javabin&version=2} status=0 QTime=0
+2022-05-16 03:53:05.835 INFO  (qtp507819576-22) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.S.Request webapp=/solr path=/get params={distrib=false&qt=/get&fingerprint=false&getVersions=100&wt=javabin&version=2} status=0 QTime=0
+2022-05-16 03:53:06.293 INFO  (qtp507819576-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node11&collection.configName=collection2&newCollection=true&name=collection2_shard1_replica_n8&action=CREATE&numShards=4&collection=collection2&shard=shard1&wt=javabin&version=2&replicaType=NRT} status=0 QTime=2720
+2022-05-16 03:53:06.300 INFO  (qtp507819576-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node9&collection.configName=collection2&newCollection=true&name=collection2_shard3_replica_n7&action=CREATE&numShards=4&collection=collection2&shard=shard3&wt=javabin&version=2&replicaType=NRT} status=0 QTime=2713
+2022-05-16 03:53:06.410 INFO  (zkCallback-11-thread-2) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection2/state.json] for collection [collection2] has occurred - updating... (live nodes size: [4])
+2022-05-16 03:53:06.411 INFO  (zkCallback-11-thread-3) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection2/state.json] for collection [collection2] has occurred - updating... (live nodes size: [4])
+2022-05-16 03:53:06.605 INFO  (ZKEventListenerThread) [] o.a.s.c.SolrCore config update listener called for core collection2_shard1_replica_n8
+2022-05-16 03:53:06.615 INFO  (ZKEventListenerThread) [] o.a.s.c.SolrCore core reload collection2_shard1_replica_n8
+2022-05-16 03:53:06.674 INFO  (ZKEventListenerThread) [] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-05-16 03:53:06.690 INFO  (ZKEventListenerThread) [] o.a.s.s.IndexSchema Schema name=default-config
+2022-05-16 03:53:06.936 INFO  (qtp507819576-24) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2022-05-16 03:53:06.937 INFO  (qtp507819576-23) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2022-05-16 03:53:06.948 INFO  (qtp507819576-24) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=24
+2022-05-16 03:53:06.951 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2022-05-16 03:53:06.959 INFO  (qtp507819576-23) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=35
+2022-05-16 03:53:06.962 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.h.SolrConfigHandler Trying to update my configs
+2022-05-16 03:53:06.962 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.c.SolrCore config update listener called for core collection2_shard3_replica_n7
+2022-05-16 03:53:06.964 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.c.SolrCore core reload collection2_shard3_replica_n7
+2022-05-16 03:53:06.975 INFO  (ZKEventListenerThread) [] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-05-16 03:53:06.976 INFO  (ZKEventListenerThread) [] o.a.s.c.CoreContainer Reloading SolrCore 'collection2_shard1_replica_n8' using configuration from configset collection2
+2022-05-16 03:53:06.988 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-05-16 03:53:07.003 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.s.IndexSchema Schema name=default-config
+2022-05-16 03:53:07.106 INFO  (qtp507819576-22) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2022-05-16 03:53:07.125 INFO  (qtp507819576-22) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=19
+2022-05-16 03:53:07.133 INFO  (qtp507819576-19) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2022-05-16 03:53:07.163 INFO  (ZKEventListenerThread) [] o.a.s.c.SolrCore Opening new SolrCore at [/home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/collection2_shard1_replica_n8], dataDir=[/home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/collection2_shard1_replica_n8/data/]
+2022-05-16 03:53:07.163 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2022-05-16 03:53:07.163 INFO  (qtp507819576-19) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=31
+2022-05-16 03:53:07.178 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2022-05-16 03:53:07.500 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-05-16 03:53:07.500 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.c.CoreContainer Reloading SolrCore 'collection2_shard3_replica_n7' using configuration from configset collection2
+2022-05-16 03:53:07.526 INFO  (ZKEventListenerThread) [] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-05-16 03:53:07.526 INFO  (ZKEventListenerThread) [] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2022-05-16 03:53:07.543 INFO  (qtp507819576-23) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2022-05-16 03:53:07.546 INFO  (qtp507819576-24) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2022-05-16 03:53:07.548 INFO  (qtp507819576-23) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=5
+2022-05-16 03:53:07.551 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2022-05-16 03:53:07.558 INFO  (qtp507819576-24) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=12
+2022-05-16 03:53:07.559 INFO  (ZKEventListenerThread) [] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/collection2
+2022-05-16 03:53:07.561 INFO  (ZKEventListenerThread) [] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/collection2
+2022-05-16 03:53:07.562 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2022-05-16 03:53:07.565 INFO  (ZKEventListenerThread) [] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/collection2/managed-schema.xml
+2022-05-16 03:53:07.568 INFO  (ZKEventListenerThread) [] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2022-05-16 03:53:07.568 INFO  (ZKEventListenerThread) [] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01}
+2022-05-16 03:53:07.570 INFO  (ZKEventListenerThread) [] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-05-16 03:53:07.570 INFO  (ZKEventListenerThread) [] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1732953440329400320
+2022-05-16 03:53:07.579 INFO  (searcherExecutor-37-thread-1-processing-localhost:8985_solr) [] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-05-16 03:53:07.579 INFO  (searcherExecutor-37-thread-1-processing-localhost:8985_solr) [] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-05-16 03:53:07.627 INFO  (ZKEventListenerThread) [] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2022-05-16 03:53:07.635 INFO  (searcherExecutor-37-thread-1-processing-localhost:8985_solr) [] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-05-16 03:53:07.645 INFO  (ZKEventListenerThread) [] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@4b1a8cf7 collection2_shard1_replica_n8
+2022-05-16 03:53:07.645 INFO  (ZKEventListenerThread) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.collection2.shard1.replica_n8 tag=SolrCore@4b1a8cf7
+2022-05-16 03:53:07.673 INFO  (searcherExecutor-37-thread-1-processing-localhost:8985_solr) [] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-05-16 03:53:07.729 INFO  (qtp507819576-22) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.h.SolrConfigHandler I already have the expected version 0 of config
+2022-05-16 03:53:07.729 INFO  (qtp507819576-22) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.h.SolrConfigHandler isStale false , resourceloader org.apache.solr.cloud.ZkSolrResourceLoader
+2022-05-16 03:53:07.729 INFO  (qtp507819576-22) [c:collection2 s:shard1 r:core_node11 x:collection2_shard1_replica_n8] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2022-05-16 03:53:07.744 INFO  (searcherExecutor-37-thread-1-processing-localhost:8985_solr) [] o.a.s.c.SolrCore Registered new searcher autowarm time: 15 ms
+2022-05-16 03:53:07.748 INFO  (qtp507819576-19) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2022-05-16 03:53:07.757 INFO  (qtp507819576-19) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=9
+2022-05-16 03:53:07.761 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2022-05-16 03:53:07.768 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.c.SolrCore Opening new SolrCore at [/home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/collection2_shard3_replica_n7], dataDir=[/home/haseeb/Desktop/DC_Project/solr/example/cloud/node3/solr/collection2_shard3_replica_n7/data/]
+2022-05-16 03:53:07.773 INFO  (ZKEventListenerThread) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.collection2.shard1.leader tag=SolrCore@4b1a8cf7
+2022-05-16 03:53:07.780 INFO  (ZKEventListenerThread) [] o.a.s.c.SolrCore config update listener called for core collection2_shard3_replica_n7
+2022-05-16 03:53:07.862 INFO  (ZKEventListenerThread) [] o.a.s.c.SolrCore core reload collection2_shard3_replica_n7
+2022-05-16 03:53:07.862 INFO  (ZKEventListenerThread) [] o.a.s.c.SolrCore Another reload is in progress. Not doing anything.
+2022-05-16 03:53:07.930 INFO  (qtp507819576-22) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2022-05-16 03:53:07.951 INFO  (qtp507819576-22) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=21
+2022-05-16 03:53:07.953 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2022-05-16 03:53:08.023 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-05-16 03:53:08.023 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2022-05-16 03:53:08.040 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/collection2
+2022-05-16 03:53:08.045 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/collection2
+2022-05-16 03:53:08.046 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/collection2/managed-schema.xml
+2022-05-16 03:53:08.055 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2022-05-16 03:53:08.055 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01}
+2022-05-16 03:53:08.056 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-05-16 03:53:08.057 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1732953440840056832
+2022-05-16 03:53:08.059 INFO  (searcherExecutor-40-thread-1-processing-localhost:8985_solr) [] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-05-16 03:53:08.059 INFO  (searcherExecutor-40-thread-1-processing-localhost:8985_solr) [] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-05-16 03:53:08.065 INFO  (qtp507819576-19) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2022-05-16 03:53:08.075 INFO  (qtp507819576-19) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=9
+2022-05-16 03:53:08.085 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2022-05-16 03:53:08.093 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2022-05-16 03:53:08.112 INFO  (searcherExecutor-40-thread-1-processing-localhost:8985_solr) [] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-05-16 03:53:08.114 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@13485a7c collection2_shard3_replica_n7
+2022-05-16 03:53:08.114 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.collection2.shard3.replica_n7 tag=SolrCore@13485a7c
+2022-05-16 03:53:08.125 INFO  (searcherExecutor-40-thread-1-processing-localhost:8985_solr) [] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-05-16 03:53:08.169 INFO  (searcherExecutor-40-thread-1-processing-localhost:8985_solr) [] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-05-16 03:53:08.170 INFO  (SolrConfigHandler-refreshconf) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.collection2.shard3.leader tag=SolrCore@13485a7c
+2022-05-16 03:53:08.200 INFO  (qtp507819576-22) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.h.SolrConfigHandler I already have the expected version 0 of config
+2022-05-16 03:53:08.200 INFO  (qtp507819576-22) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.h.SolrConfigHandler isStale false , resourceloader org.apache.solr.cloud.ZkSolrResourceLoader
+2022-05-16 03:53:08.200 INFO  (qtp507819576-22) [c:collection2 s:shard3 r:core_node9 x:collection2_shard3_replica_n7] o.a.s.c.S.Request webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2022-05-16 03:53:32.811 INFO  (qtp507819576-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1652673203551} status=0 QTime=11

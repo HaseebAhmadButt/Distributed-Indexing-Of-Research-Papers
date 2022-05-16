@@ -1,0 +1,112 @@
+2022-05-16 01:46:20.259 INFO  (main) [] o.e.j.u.log Logging initialized @926ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-05-16 01:46:20.483 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-Ubuntu-0ubuntu0.22.04.1
+2022-05-16 01:46:20.772 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-05-16 01:46:20.785 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-05-16 01:46:20.785 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in cloud mode on port 8986
+2022-05-16 01:46:20.785 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /home/haseeb/Desktop/DC_Project/solr-9.0.0
+2022-05-16 01:46:20.786 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-05-16T01:46:20.785993Z
+2022-05-16 01:46:20.813 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr (source: system property: solr.solr.home)
+2022-05-16 01:46:20.815 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr/solr.xml
+2022-05-16 01:46:21.804 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2022-05-16 01:46:21.813 INFO  (main) [] o.a.s.c.SolrZkServerProps Reading configuration from: /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr/zoo.cfg
+2022-05-16 01:46:21.817 INFO  (main) [] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9986
+2022-05-16 01:46:21.817 WARN  (main) [] o.a.s.c.SolrZkServer Embedded Zookeeper is not recommended in production environments. See Reference Guide for details.
+2022-05-16 01:46:21.868 WARN  (embeddedZkServer) [] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2022-05-16 01:46:22.319 INFO  (main) [] o.a.s.c.ZkContainer Zookeeper client=localhost:9986
+2022-05-16 01:46:22.368 INFO  (main) [] o.a.s.c.DistributedClusterStateUpdater Creating DistributedClusterStateUpdater with useDistributedStateUpdate=false. Solr will be using Overseer based cluster state updates.
+2022-05-16 01:46:22.457 INFO  (main) [] o.a.s.c.c.ConnectionManager Waiting up to 30000ms for client to connect to ZooKeeper
+2022-05-16 01:46:22.496 INFO  (zkConnectionManagerCallback-10-thread-1) [] o.a.s.c.c.ConnectionManager zkClient has connected
+2022-05-16 01:46:22.497 INFO  (main) [] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2022-05-16 01:46:22.540 WARN  (main) [] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2022-05-16 01:46:22.549 INFO  (main) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (3)
+2022-05-16 01:46:22.580 INFO  (main) [] o.a.s.c.DistributedClusterStateUpdater Creating DistributedClusterStateUpdater with useDistributedStateUpdate=false. Solr will be using Overseer based cluster state updates.
+2022-05-16 01:46:22.602 INFO  (main) [] o.a.s.c.ZkController Publish node=localhost:8986_solr as DOWN
+2022-05-16 01:46:22.612 INFO  (main) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-05-16 01:46:22.620 INFO  (main) [] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/localhost:8986_solr
+2022-05-16 01:46:22.629 INFO  (zkCallback-9-thread-1) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (4)
+2022-05-16 01:46:22.692 INFO  (main) [] o.a.s.p.PackageLoader /packages.json updated to version -1
+2022-05-16 01:46:22.706 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-05-16 01:46:23.003 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr
+2022-05-16 01:46:23.004 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [collection1_shard1_replica_n1]
+2022-05-16 01:46:23.103 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-05-16 01:46:23.141 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@35fe2125{/solr,file:///home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr-webapp/webapp}
+2022-05-16 01:46:23.166 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /home/haseeb/Desktop/DC_Project/solr-9.0.0/server/logs/2022_05_16.request.log
+2022-05-16 01:46:23.181 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@66b7550d{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8986}
+2022-05-16 01:46:23.181 INFO  (main) [] o.e.j.s.Server Started @3850ms
+2022-05-16 01:46:23.219 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [] o.a.s.s.IndexSchema Schema name=default-config
+2022-05-16 01:46:23.696 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-05-16 01:46:52.990 INFO  (zkCallback-9-thread-1) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (1)
+2022-05-16 01:46:52.994 INFO  (zkCallback-9-thread-2) [] o.a.s.c.OverseerElectionContext I am going to be the leader localhost:8986_solr
+2022-05-16 01:46:53.004 INFO  (zkCallback-9-thread-2) [] o.a.s.c.Overseer Overseer (id=72057787431649280-localhost:8986_solr-n_0000000005) starting
+2022-05-16 01:46:53.059 INFO  (OverseerStateUpdate-72057787431649280-localhost:8986_solr-n_0000000005) [] o.a.s.c.Overseer Starting to work on the main queue : localhost:8986_solr
+2022-05-16 01:46:53.084 INFO  (zkCallback-9-thread-1) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection1/state.json] for collection [collection1] has occurred - updating... (live nodes size: [1])
+2022-05-16 01:46:53.084 INFO  (zkCallback-9-thread-2) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection1/state.json] for collection [collection1] has occurred - updating... (live nodes size: [1])
+2022-05-16 01:46:53.205 INFO  (zkCallback-9-thread-2) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection1/state.json] for collection [collection1] has occurred - updating... (live nodes size: [1])
+2022-05-16 01:46:53.205 INFO  (zkCallback-9-thread-1) [] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/collection1/state.json] for collection [collection1] has occurred - updating... (live nodes size: [1])
+2022-05-16 01:46:53.215 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [c:collection1 s:shard1 r:core_node2 x:collection1_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-05-16 01:46:53.218 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [c:collection1 s:shard1 r:core_node2 x:collection1_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
+2022-05-16 01:46:53.322 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [c:collection1 s:shard1 r:core_node2 x:collection1_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-05-16 01:46:53.322 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [c:collection1 s:shard1 r:core_node2 x:collection1_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'collection1_shard1_replica_n1' using configuration from configset _default, trusted=true
+2022-05-16 01:46:53.357 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [c:collection1 s:shard1 r:core_node2 x:collection1_shard1_replica_n1] o.a.s.c.SolrCore Opening new SolrCore at [/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr/collection1_shard1_replica_n1], dataDir=[/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr/collection1_shard1_replica_n1/data/]
+2022-05-16 01:46:53.417 ERROR (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [c:collection1 s:shard1 r:core_node2 x:collection1_shard1_replica_n1] o.a.s.c.SolrCore Solr index directory '/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr/collection1_shard1_replica_n1/data/index/' is locked (lockType=native).  Throwing exception.
+2022-05-16 01:46:53.417 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [c:collection1 s:shard1 r:core_node2 x:collection1_shard1_replica_n1] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@6709bab7 collection1_shard1_replica_n1
+2022-05-16 01:46:53.417 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [c:collection1 s:shard1 r:core_node2 x:collection1_shard1_replica_n1] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.collection1.shard1.replica_n1 tag=SolrCore@6709bab7
+2022-05-16 01:46:53.422 INFO  (coreLoadExecutor-15-thread-1-processing-localhost:8986_solr) [c:collection1 s:shard1 r:core_node2 x:collection1_shard1_replica_n1] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.collection1.shard1.leader tag=SolrCore@6709bab7
+2022-05-16 01:46:53.427 ERROR (coreContainerWorkExecutor-2-thread-1-processing-localhost:8986_solr) [] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [collection1_shard1_replica_n1]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [collection1_shard1_replica_n1]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:979) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:259) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [collection1_shard1_replica_n1]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1583) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$10(CoreContainer.java:950) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Index dir '/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr/collection1_shard1_replica_n1/data/index/' of core 'collection1_shard1_replica_n1' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1204) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1560) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$10(CoreContainer.java:950) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr/collection1_shard1_replica_n1/data/index/' of core 'collection1_shard1_replica_n1' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:874) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1123) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1560) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$10(CoreContainer.java:950) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2022-05-16 01:47:21.703 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@66b7550d{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8986}
+2022-05-16 01:47:21.712 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1842943543
+2022-05-16 01:47:21.713 INFO  (ShutdownMonitor) [] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/localhost:8986_solr
+2022-05-16 01:47:21.723 INFO  (ShutdownMonitor) [] o.a.s.c.ZkController Publish this node as DOWN...
+2022-05-16 01:47:21.723 INFO  (ShutdownMonitor) [] o.a.s.c.ZkController Publish node=localhost:8986_solr as DOWN
+2022-05-16 01:47:21.724 INFO  (zkCallback-9-thread-2) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (0)
+2022-05-16 01:47:21.738 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2022-05-16 01:47:21.748 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2022-05-16 01:47:21.754 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2022-05-16 01:47:21.757 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2022-05-16 01:47:21.775 INFO  (closeThreadPool-23-thread-1) [] o.a.s.c.Overseer Overseer (id=72057787431649280-localhost:8986_solr-n_0000000005) closing
+2022-05-16 01:47:21.783 INFO  (OverseerStateUpdate-72057787431649280-localhost:8986_solr-n_0000000005) [] o.a.s.c.Overseer Overseer Loop exiting : localhost:8986_solr
+2022-05-16 01:47:21.793 INFO  (closeThreadPool-23-thread-2) [] o.a.s.c.Overseer Overseer (id=72057787431649280-localhost:8986_solr-n_0000000005) closing
+2022-05-16 01:47:21.903 INFO  (ShutdownMonitor) [] o.a.s.c.Overseer Overseer (id=72057787431649280-localhost:8986_solr-n_0000000005) closing
+2022-05-16 01:47:21.903 WARN  (embeddedZkServer) [] o.a.z.s.ZooKeeperServerMain Server interrupted => java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1040)
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1040) ~[?:?]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1345) ~[?:?]
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:232) ~[?:?]
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:183) ~[?:?]
+	at org.apache.solr.cloud.SolrZkServer.lambda$start$0(SolrZkServer.java:133) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022-05-16 01:47:21.904 INFO  (embeddedZkServer) [] o.a.s.c.SolrZkServer ZooKeeper Server exited.
+2022-05-16 01:47:21.907 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@35fe2125{/solr,null,STOPPED}{/home/haseeb/Desktop/DC_Project/solr-9.0.0/server/solr-webapp/webapp}
